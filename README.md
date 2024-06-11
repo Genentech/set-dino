@@ -14,13 +14,13 @@ Key features of Set-DINO include:
 1. Biological replicates across batches are used as weak supervision to encourage the SSL model to learn representation that are less confounded by **batch effects**.
 2. Instead of using a single-cell image as input, we sample a set of single-cell images with the same perturbation to overcome the **heterogeneity** of single-cell data.
 
-We trained the model on a public OPS dataset. Our results show that Set-DINO helps mitigate the impact of confounders and encodes more biologically meaningful information.
+We trained the model on a public OPS dataset from [Funk, et al.](https://pubmed.ncbi.nlm.nih.gov/36347254/). Our results show that Set-DINO helps mitigate the impact of confounders and encodes more biologically meaningful information.
 
 ### Framework Overview
 <img width="900" alt="framework" src="./images/figure-overview.png">
 
 ### Performance Comparison
-Set-DINO outperforms engineered features and the regular DINO framework on single-cell images. The embeddings from Set-DINO encode more biological information and recall more known relationshop in the CORUM dataset. 
+Set-DINO outperforms engineered features and the regular DINO framework on single-cell images. The embeddings from Set-DINO recall more known relationships in the CORUM dataset. 
 More discussion can be found in the **Results and Discussion** section of the paper. 
 
 <img width="900" alt="table" src="./images/performance_comparison.png">
