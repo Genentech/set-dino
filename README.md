@@ -3,7 +3,7 @@
 Official PyTorch implementation and pretrained models for Set-DINO. For details, see the paper: **Weakly Supervised Set-Consistency Learning Improves Morphological Profiling
 of Single-Cell Images**.
 
-[[`arXiv`](TBD)]
+[[`arXiv`](https://arxiv.org/abs/2406.05308)]
 
 ## Set-DINO
 
