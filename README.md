@@ -17,14 +17,14 @@ Key features of Set-DINO include:
 We trained the model on a public OPS dataset from [Funk, et al.](https://pubmed.ncbi.nlm.nih.gov/36347254/). Our results show that Set-DINO helps mitigate the impact of confounders and encodes more biologically meaningful information.
 
 ### Framework Overview
-<img width="900" alt="framework" src="./images/figure-overview.png">
+<img width="900" alt="framework" src="./figures/figure-overview.png">
 
 ### Performance Comparison
 Set-DINO outperforms engineered features and the regular DINO framework on single-cell images. The embeddings from Set-DINO recall more known relationships in the CORUM dataset. 
 More discussion can be found in the **Results and Discussion** section of the paper. 
 
-<img width="900" alt="table" src="./images/performance_comparison.png">
-<img width="1000" alt="corum_performance" src="./images/figure-corum.png">
+<img width="900" alt="table" src="./figures/performance_comparison.png">
+<img width="1000" alt="corum_performance" src="./figures/figure-corum.png">
 
 
 
