@@ -1,1 +1,2 @@
 checkpoints/pretrained_cross_batch_n16_guide0_ntc_norm.ckpt filter=lfs diff=lfs merge=lfs -text
+*.ckpt filter=lfs diff=lfs merge=lfs -text
