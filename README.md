@@ -39,9 +39,12 @@ $> conda activate set-dino
 A pretrained `vit_small` checkpoint is provided at `./checkpoint/pretrained_cross_batch_n16_guide0_ntc_norm.ckpt`.
 This checkpoint was used to generate the results of `Set-DINO (z-score) - gene target` shown above.
 
+Please note that `git-lfs` should be installed and initialized to download the checkpoint file properly. More information can be found [here](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage)
+
 In the training process of the provided checkpoint, the teacher
 and student views are sampled from cells (n=16) with the same gene targets (multiple guide RNAs) and from different batches. 
 The full training hyperparameters can be found at `./run-experiment.sh`
+
 
 ## Run Inference
 To properly run the inference with the pretrained model, the input high-content images should have the same four channels as the training data: 
