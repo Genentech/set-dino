@@ -125,7 +125,7 @@ class ScaleAndOffset(Augmentation):
                                   high=self._scale_mean+self._scale_range,
                                   size=size)
         offset = self._rng.uniform(low=self._offset_mean-self._offset_range,
-                                   high=self._offset_mean+self._scale_range,
+                                   high=self._offset_mean+self._offset_range,
                                    size=size)
         self._logger.debug(f'{scale=}')
         self._logger.debug(f'{offset=}')
@@ -162,7 +162,8 @@ class Zoom(Augmentation):
         scale = self._rng.uniform(low=self._scale, high=1.0)
         self._logger.debug(f'{scale=}')
         size = tuple(round(d * scale) for d in img.shape[1:])
-        offset = np.array(img.shape[1:]) - np.array(size)
+        max_offset = np.array(img.shape[1:]) - np.array(size)
+        offset = self._rng.integers(0, max_offset + 1)
         slices = (slice(None),) + tuple(slice(o, o + s) for o, s in zip(offset, size))
         self._logger.debug(f'{size=}')
         self._logger.debug(f'{offset=}')
